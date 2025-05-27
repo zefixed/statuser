@@ -29,5 +29,7 @@ read -p "Enter the timeout between checks (e.g. 5m): " between_timeout
 sed -i "s|OnUnitActiveSec=5m|OnUnitActiveSec=$between_timeout|g" /etc/systemd/system/statuser.timer
 
 systemctl daemon-reload
-systemctl start statuser.{service,timer}
-systemctl enable --now statuser.{service,timer}
+systemctl start statuser.service
+systemctl start statuser.timer}
+systemctl enable --now statuser.service
+systemctl enable --now statuser.timer
