@@ -8,6 +8,7 @@ Statuser is a service that monitors the status of Docker containers and the avai
 - [✨ Features](#-features)
 - [🛠️ Technologies](#%EF%B8%8F-technologies)
 - [📥 Installation and Setup](#-installation-and-setup)
+- [📤 Uninstallation and Cleanup](#-uninstallation-and-cleanup)
 - [📜 License](#-license)
 
 ## 📄 Description
