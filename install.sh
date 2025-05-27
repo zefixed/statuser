@@ -31,5 +31,4 @@ sed -i "s|OnUnitActiveSec=5m|OnUnitActiveSec=$between_timeout|g" /etc/systemd/sy
 systemctl daemon-reload
 systemctl start statuser.service
 systemctl start statuser.timer
-systemctl enable --now statuser.service
 systemctl enable --now statuser.timer
