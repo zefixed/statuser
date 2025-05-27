@@ -1,0 +1,6 @@
+[Unit]
+Description=Notify to telegram about down services
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/send_checks_to_telegram.sh
