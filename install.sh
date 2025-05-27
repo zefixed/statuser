@@ -6,7 +6,7 @@ chmod +x /usr/local/bin/notify_telegram.sh
 chmod +x /usr/local/bin/send_checks_to_telegram.sh
 
 read -p "Enter the names of the containers you want to track, separated by spaces (e.g. cont1 cont2 cont3): " containers
-prep_containers=$(echo -e "$containers" | sed 's/[^ ]\+/\"&\"/g')
+prep_containers=$(echo "$containers" | sed 's/[^ ]\+/\"&\"/g')
 sed -i "s|\"containers\"|$prep_containers|g" /usr/local/bin/check_containers_status.sh
 
 read -p "Enter the url you want to track, separated by spaces (e.g. https://example1.com https://example2.com): " urls
